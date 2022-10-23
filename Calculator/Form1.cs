@@ -16,5 +16,21 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void btCong_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(SoA.Text);
+            double b = double.Parse(SoB.Text);
+            double c = a + b;
+            txtKQ.Text = c.ToString();
+        }
+
+        private void btTru_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(SoA.Text);
+            double b = double.Parse(SoB.Text);
+            double c = a - b;
+            txtKQ.Text = c.ToString();
+        }
     }
 }
